@@ -4,6 +4,15 @@ tmux-picker
 
 This shit is so cool I want to lick it.
 
+TODO
+####
+
+Use (since tmux 1.9a)
+
+.. sourcecode:: bash
+
+    tmux ls -F '#{?session_attached,,#{session_name}}'
+
 Caveat Emptor
 #############
 
