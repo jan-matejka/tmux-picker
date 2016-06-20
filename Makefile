@@ -1,10 +1,8 @@
 BINFILE:=$(DESTDIR)/usr/bin/tmux-picker
 
 build:
-	
-	echo noop
 
+.PHONY: install
 install:
 
-	cp tmux-picker.sh $(BINFILE)
-	chmod 755 $(BINFILE)
+	install -m755 tmux-picker.sh $(BINFILE)
