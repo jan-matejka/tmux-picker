@@ -10,3 +10,8 @@ build: # NO-OP
 install:
 
 	install -m755 tmux-picker.sh $(BINDIR)/tmux-picker
+
+.PHONY: install-home
+install-home:
+
+	$(MAKE) install PREFIX=$(HOME)/.local
